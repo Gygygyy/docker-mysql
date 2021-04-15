@@ -5,10 +5,9 @@ services:
         environment:
           - MYSQL_ROOT_PASSWORD=password
           - MYSQL_USER=dev_user
-          - MYSQL_PASSWORD=quieG2phaech4Naichoo8kekizisie2o
+          - MYSQL_PASSWORD=1qazxsw2
           - MYSQL_SERVER_ID=1
         volumes:
-#          - ./builds/mount_files/mysql/create_unit_test_db.sql:/docker-entrypoint-initdb.d/create_unit_test_db.sql
           - ./mysql_data:/var/lib/mysql
         command: [
           "--explicit_defaults_for_timestamp=1",
